@@ -47,7 +47,7 @@ public class Mail_Test {
         WebElement passwordField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("Passwd")));
 
         System.out.println("Entering password...");
-        driver.findElement(By.name("Passwd")).sendKeys("Neoload123@");
+        driver.findElement(By.name("Passwd")).sendKeys("pass?");
         driver.findElement(By.cssSelector(".VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-vQzf8d")).click();
 
         System.out.println("Waiting for login to complete...");
