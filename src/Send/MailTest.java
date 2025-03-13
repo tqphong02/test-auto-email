@@ -28,7 +28,7 @@ public class MailTest {
     }
 
     public void setUp() {
-        System.setProperty("webdriver.edge.driver", "C:\\Users\\Asus\\eclipse-workspace\\Web_Test\\msedgedriver.exe");
+        System.setProperty("webdriver.edge.driver", "path");
         driver = new EdgeDriver();
         driver.manage().window().setSize(new Dimension(1196, 676));
         js = (JavascriptExecutor) driver;
@@ -50,7 +50,7 @@ public class MailTest {
 
         // Wait for the password input field to be visible
         WebElement passwordField = wait.until(ExpectedConditions.visibilityOfElementLocated(By.name("Passwd")));
-        driver.findElement(By.name("Passwd")).sendKeys("Neoload123@");
+        driver.findElement(By.name("Passwd")).sendKeys("pass?");
         driver.findElement(By.cssSelector(".VfPpkd-LgbsSe-OWXEXe-k8QpJ > .VfPpkd-vQzf8d")).click();
         try {
             Thread.sleep(10000);
