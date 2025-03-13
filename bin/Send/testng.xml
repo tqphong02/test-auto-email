@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Test Suite">
+    <listeners>
+        <listener class-name="Send.TestListener"/>
+    </listeners>
+    <test name="Mail_Test">
+        <classes>
+            <class name="Send.Mail_Test">
+                <methods>
+                    <include name="sendLogin"/>
+                    <include name="sendEmail"/>
+                    <include name="openGmailAndCheckEmailAfterSending"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
